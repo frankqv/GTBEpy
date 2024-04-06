@@ -17,7 +17,8 @@ urlpatterns = [
     # Carpeta Cliente
     path('frontend/cliente/escritorio/', views.cliente_escrtorio, name='cliente_escritorio'),
     path('frontend/cliente/plan', views.cliente_plan),
-    path('frontend/cliente/servicio', views.cliente_servicio),
+    path('frontend/cliente/servicio/', views.cliente_servicio, name='cliente_servicio'),
+
     # Carpeta Categoria
     path('frontend/categoria/actualizar', views.categoria_actualizar),
     path('frontend/categoria/eliminar', views.categoria_eliminar),

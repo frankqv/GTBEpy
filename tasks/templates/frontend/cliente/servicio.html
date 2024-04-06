@@ -1,3 +1,4 @@
+{% load static %}
 
 <!doctype html>
 <html lang="es">
@@ -9,23 +10,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>GET THE BEST</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../backend/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static '../../backend/css/bootstrap.min.css' %}">
     <!----css3---->
-    <link rel="stylesheet" href="../../backend/css/custom2.css">
-    <link rel="stylesheet" href="../../backend/css/loader.css">
+    <link rel="stylesheet" href="{% static '../../backend/css/custom2.css' %}">
+    <link rel="stylesheet" href="{% static '../../backend/css/loader.css' %}">
 
     <!-- Data Tables -->
-    <link rel="stylesheet" type="text/css" href="../../backend/css/datatable.css">
-    <link rel="stylesheet" type="text/css" href="../../backend/css/buttonsdataTables.css">
-    <link rel="stylesheet" type="text/css" href="../../backend/css/font.css">
+    <link rel="stylesheet" type="text/css" href="{% static '../../backend/css/datatable.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '../../backend/css/buttonsdataTables.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '../../backend/css/font.css' %}">
 
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap' %}" rel="stylesheet">
     <!--google material icon-->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../../backend/img/favicon.png" />
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Material+Icons' %}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static '../../backend/img/favicon.png' %}" />
 </head>
 
 <body>
@@ -34,23 +35,23 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3><img src="../../backend/img/favicon.png" class="img-fluid" /><span>GET THE BEST</span></h3>
+                <h3><img src="{% static '../../backend/img/favicon.png' %}" class="img-fluid" /><span>GET THE BEST</span></h3>
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="../cliente/escritorio.html" class="dashboard"><i class="material-icons">dashboard</i><span>Panel Cliente</span></a>
+                    <a href="{% static '../cliente/escritorio.html' %}" class="dashboard"><i class="material-icons">dashboard</i><span>Panel Cliente</span></a>
                 </li>
                 <li class="dropdown">
-                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <a href="{% static '#pageSubmenu2' %}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="material-icons">dataset</i><span>Planes</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu2">
                         <li>
-                            <a href="../cliente/plan.html">Mostrar</a>
+                            <a href="{% static '../cliente/plan.html' %}">Mostrar</a>
                         </li>
                     </ul>
                 </li>
                 <li class="">
-                    <a href="../cliente/servicio.html"><i class="material-icons">view_timeline</i><span>Servicio</span></a>
+                    <a href="{% static '../cliente/servicio.html' %}"><i class="material-icons">view_timeline</i><span>Servicio</span></a>
                 </li>
         </nav>
         <!-- Sidebar  -->
@@ -58,7 +59,7 @@
         <!-- Account Content  -->
         <div id="content">
             <div class=''>
-                <img class='loading-gif' alt='loading' src="https://i.imgflip.com/8jlwf5.gif" />
+                <img class='loading-gif' alt='loading' src="{% static 'https://i.imgflip.com/8jlwf5.gif' %}" />
             </div>
             <div class="top-navbar">
                 <nav class="navbar navbar-expand-lg">
@@ -66,7 +67,7 @@
                         <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
                             <span class="material-icons">arrow_back_ios</span>
                         </button>
-                        <a class="navbar-brand" href="#"> Servicio </a>
+                        <a class="navbar-brand" href="{% static '#' %}"> Servicio </a>
                         <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="material-icons">more_vert</span>
                         </button>
@@ -74,20 +75,20 @@
                         <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
                             <ul class="nav navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../cuenta/perfil2.html">
+                                    <a class="nav-link" href="{% static '../cuenta/perfil2.html' %}">
                                         <span class="material-icons">settings</span>
                                     </a>
                                 </li>
                                 <li class="dropdown nav-item active">
-                                    <a href="#" class="nav-link" data-toggle="dropdown">
-                                        <img src="../../backend/img/reere.png">
+                                    <a href="{% static '#' %}" class="nav-link" data-toggle="dropdown">
+                                        <img src="{% static '../../backend/img/reere.png' %}">
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="../cuenta/perfil2.html">Mi perfil</a>
+                                            <a href="{% static '../cuenta/perfil2.html' %}">Mi perfil</a>
                                         </li>
                                         <li>
-                                            <a href="../cuenta/salir.html">Salir</a>
+                                            <a href="{% static '../cuenta/salir.html' %}">Salir</a>
                                         </li>
 
                                     </ul>
@@ -192,8 +193,8 @@
                                                 <?php if ($g->estod == 'Activo') { ?>
                                                     <span class="badge badge-success">Activo</span>
                                                     <td>
-                                                        <a class="btn btn-secondary text-white" target="_blank" href="https://api.whatsapp.com/send/?phone=573222024365&text=Equipo%20de%20GET%20THE%20BEST%20EXPERIENCE"><i class='material-icons' data-toggle='tooltip' title='crear'>smartphone</i></a>
-                                                        <a class="btn btn-info text-white" href="../servicio/ticket.php?id=8"><i class='material-icons' data-toggle='tooltip' title='crear'>print</i></a>    
+                                                        <a class="btn btn-secondary text-white" target="_blank" href="{% static 'https://api.whatsapp.com/send/?phone=573222024365&text=Equipo%20de%20GET%20THE%20BEST%20EXPERIENCE' %}"><i class='material-icons' data-toggle='tooltip' title='crear'>smartphone</i></a>
+                                                        <a class="btn btn-info text-white" href="{% static '../servicio/ticket.php?id=8' %}"><i class='material-icons' data-toggle='tooltip' title='crear'>print</i></a>    
                                                 </td>
 
                                                 <?php } else { ?>
@@ -231,10 +232,10 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../../backend/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="../../backend/js/popper.min.js"></script>
-    <script src="../../backend/js/bootstrap.min.js"></script>
-    <script src="../../backend/js/jquery-3.3.1.min.js"></script>
+    <script src="{% static '../../backend/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static '../../backend/js/popper.min.js' %}"></script>
+    <script src="{% static '../../backend/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '../../backend/js/jquery-3.3.1.min.js' %}"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#sidebarCollapse').on('click', function() {
@@ -249,17 +250,17 @@
     </script>
 
     <!-- Loader Gif -->
-    <script src="../../backend/js/loader.js"></script>
+    <script src="{% static '../../backend/js/loader.js' %}"></script>
     <!-- Loader Gif -->
 
     <!-- Data Tables -->
-    <script type="text/javascript" src="../../backend/js/datatable.js"></script>
-    <script type="text/javascript" src="../../backend/js/datatablebuttons.js"></script>
-    <script type="text/javascript" src="../../backend/js/jszip.js"></script>
-    <script type="text/javascript" src="../../backend/js/pdfmake.js"></script>
-    <script type="text/javascript" src="../../backend/js/vfs_fonts.js"></script>
-    <script type="text/javascript" src="../../backend/js/buttonshtml5.js"></script>
-    <script type="text/javascript" src="../../backend/js/buttonsprint.js"></script>
+    <script type="text/javascript" src="{% static '../../backend/js/datatable.js' %}"></script>
+    <script type="text/javascript" src="{% static '../../backend/js/datatablebuttons.js' %}"></script>
+    <script type="text/javascript" src="{% static '../../backend/js/jszip.js' %}"></script>
+    <script type="text/javascript" src="{% static '../../backend/js/pdfmake.js' %}"></script>
+    <script type="text/javascript" src="{% static '../../backend/js/vfs_fonts.js' %}"></script>
+    <script type="text/javascript" src="{% static '../../backend/js/buttonshtml5.js' %}"></script>
+    <script type="text/javascript" src="{% static '../../backend/js/buttonsprint.js' %}"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#example').DataTable({
