@@ -68,10 +68,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pygtb',
-        'USER': 'root',
-        'password': '',
+        'USER': 'root',  # Nombre de usuario de MySQL
+        'PASSWORD': '',  # Contraseña de MySQL
         'HOST': 'localhost',
-        'PORT':3306,
+        'PORT': '3306',
     }
 }
 
