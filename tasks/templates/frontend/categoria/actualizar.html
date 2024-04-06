@@ -87,7 +87,7 @@
                     </ul>
                 </li>
                       <li class="dropdown">
-                    <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <a href="{% static '#pageSubmenu4' %}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                          <i class="material-icons">conveyor_belt</i><span>Productos</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu4">
                         <li>
@@ -128,7 +128,7 @@
                 </li>
 
                  <li class="dropdown">
-                    <a href="#pageSubmenu09" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <a href="{% static '#pageSubmenu09' %}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                          <i class="material-icons">shopping_basket</i><span>Compras</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu09">
                         <li>
@@ -141,7 +141,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#pageSubmenu010" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <a href="{% static '#pageSubmenu010' %}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                          <i class="material-icons">savings</i><span>Gastos</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu010">
                         <li>
@@ -184,7 +184,7 @@
           
         <!-- Page Content  -->
         <div id="content">
-          <div class='pre-loader'>
+          <div class=''>
     <img class='loading-gif' alt='loading' src="{% static 'https://i.imgflip.com/8jlwf5.gif' %}"/>
 </div>
           <div class="top-navbar">
@@ -323,11 +323,11 @@ if($sentencia){
   
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="../../backend/js/jquery-3.3.1.slim.min.js"></script>
-   <script src="../../backend/js/popper.min.js"></script>
-   <script src="../../backend/js/bootstrap.min.js"></script>
-   <script src="../../backend/js/jquery-3.3.1.min.js"></script>
-  <script src="../../backend/js/sweetalert.js"></script>
+   <script src="{% static '../../backend/js/jquery-3.3.1.slim.min.js' %}"></script>
+   <script src="{% static '../../backend/js/popper.min.js' %}"></script>
+   <script src="{% static '../../backend/js/bootstrap.min.js' %}"></script>
+   <script src="{% static '../../backend/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static '../../backend/js/sweetalert.js' %}"></script>
 
   
   <script type="text/javascript">
@@ -344,7 +344,7 @@ if($sentencia){
         });
 
 </script>
-<script src="../../backend/js/loader.js"></script>
+<script src="{% static '../../backend/js/loader.js' %}"></script>
 
         
   </body>

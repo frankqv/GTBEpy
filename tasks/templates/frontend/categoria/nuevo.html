@@ -1,13 +1,3 @@
-<?php
-ob_start();
-     session_start();
-    
-    if(!isset($_SESSION['rol']) || $_SESSION['rol'] != 1){
-    header('location: ../erro404.php');
-  }
-?>
-<?php if(isset($_SESSION['id'])) { ?>
-
 
 {% load static %}
 <!doctype html>
@@ -28,12 +18,12 @@ ob_start();
           <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
      
      <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+<link href="{% static 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap' %}" rel="stylesheet">
      <!--google material icon-->
-        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+        <link href="{% static 'https://fonts.googleapis.com/css2?family=Material+Icons' %}"
       rel="stylesheet">
-      <link rel="icon" type="image/png" href="../../backend/img/favicon.png"/>
+      <link rel="icon" type="image/png" href="{% static '../../backend/img/favicon.png' %}"/>
   </head>
   <body>
   
@@ -43,11 +33,11 @@ ob_start();
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3><img src="../../backend/img/favicon.png" class="img-fluid"/><span>GET THE BEST</span></h3>
+                <h3><img src="{% static '../../backend/img/favicon.png' %}" class="img-fluid"/><span>GET THE BEST</span></h3>
             </div>
             <ul class="list-unstyled components">
                <li  class="">
-                    <a href="../administrador/escritorio.php" class="dashboard"><i class="material-icons">dashboard</i><span>Panel administrativo</span></a>
+                    <a href="{% static '../administrador/escritorio.php' %}" class="dashboard"><i class="material-icons">dashboard</i><span>Panel administrativo</span></a>
                 </li>
           
                
@@ -57,10 +47,10 @@ ob_start();
                          <i class="material-icons">group</i><span>Clientes</span></a>
                     <ul class="collapse list-unstyled menu" id="homeSubmenu1">
                         <li>
-                            <a href="../clientes/mostrar.php">Mostrar</a>
+                            <a href="{% static '../clientes/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../clientes/nuevo.php">Nuevo</a>
+                            <a href="{% static '../clientes/nuevo.php' %}">Nuevo</a>
                         </li>
                         
                     </ul>
@@ -71,16 +61,16 @@ ob_start();
                          <i class="material-icons">dataset</i><span>Planes</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu2">
                         <li>
-                            <a href="../plan/mostrar.php">Mostrar</a>
+                            <a href="{% static '../plan/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../plan/nuevo.php">Nuevo</a>
+                            <a href="{% static '../plan/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
 
                 <li class="">
-                    <a href="../servicio/mostrar.php"><i class="material-icons">view_timeline</i><span>Servicio</span></a>
+                    <a href="{% static '../servicio/mostrar.php' %}"><i class="material-icons">view_timeline</i><span>Servicio</span></a>
                 </li>
                     
                      <li class="dropdown">
@@ -91,7 +81,7 @@ ob_start();
                          <span>Usuarios</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu3">
                         <li>
-                            <a href="../usuario/mostrar.php">Mostrar</a>
+                            <a href="{% static '../usuario/mostrar.php' %}">Mostrar</a>
                         </li>
                        
                     </ul>
@@ -101,10 +91,10 @@ ob_start();
                          <i class="material-icons">conveyor_belt</i><span>Productos</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu4">
                         <li>
-                            <a href="../producto/mostrar.php">Mostrar</a>
+                            <a href="{% static '../producto/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../producto/nuevo.php">Nuevo</a>
+                            <a href="{% static '../producto/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
@@ -114,10 +104,10 @@ ob_start();
                          <i class="material-icons">category</i><span>Categorias</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu5">
                         <li class="active">
-                            <a href="../categoria/mostrar.php">Mostrar</a>
+                            <a href="{% static '../categoria/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../categoria/nuevo.php">Nuevo</a>
+                            <a href="{% static '../categoria/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
@@ -129,10 +119,10 @@ ob_start();
                          <i class="material-icons">point_of_sale</i><span>Ventas</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu6">
                         <li>
-                            <a href="../venta/mostrar.php">Mostrar</a>
+                            <a href="{% static '../venta/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../venta/nuevo.php">Nuevo</a>
+                            <a href="{% static '../venta/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
@@ -142,10 +132,10 @@ ob_start();
                          <i class="material-icons">shopping_basket</i><span>Compras</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu09">
                         <li>
-                            <a href="../compra/mostrar.php">Mostrar</a>
+                            <a href="{% static '../compra/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../compra/nuevo.php">Nuevo</a>
+                            <a href="{% static '../compra/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
@@ -155,10 +145,10 @@ ob_start();
                          <i class="material-icons">savings</i><span>Gastos</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu010">
                         <li>
-                            <a href="../gastos/mostrar.php">Mostrar</a>
+                            <a href="{% static '../gastos/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../gastos/nuevo.php">Nuevo</a>
+                            <a href="{% static '../gastos/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
@@ -169,21 +159,21 @@ ob_start();
                          <i class="material-icons">signal_cellular_alt</i><span>Reportes</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu7">
                         <li>
-                            <a href="../reporte/productos.php">Productos</a>
+                            <a href="{% static '../reporte/productos.php' %}">Productos</a>
                         </li>
                         <li>
-                            <a href="../reporte/clientes.php">Clientes</a>
+                            <a href="{% static '../reporte/clientes.php' %}">Clientes</a>
                         </li>
                         <li>
-                            <a href="../reporte/ventas.php">Ventas</a>
+                            <a href="{% static '../reporte/ventas.php' %}">Ventas</a>
                         </li>
                     </ul>
                 </li>
                 <li class="">
-                    <a href="../graficos/mostrar.php"><i class="material-icons">grain</i><span>Graficos</span></a>
+                    <a href="{% static '../graficos/mostrar.php' %}"><i class="material-icons">grain</i><span>Graficos</span></a>
                 </li>
                <li class="">
-                    <a href="../cuenta/configuracion.php"><i class="material-icons">settings</i><span>Configuracion</span></a>
+                    <a href="{% static '../cuenta/configuracion.php' %}"><i class="material-icons">settings</i><span>Configuracion</span></a>
                 </li>
                    
             </ul>
@@ -192,8 +182,8 @@ ob_start();
           
         <!-- Page Content  -->
         <div id="content">
-          <div class='pre-loader'>
-    <img class='loading-gif' alt='loading' src="https://i.imgflip.com/8jlwf5.gif"/>
+          <div class=''>
+    <img class='loading-gif' alt='loading' src="{% static 'https://i.imgflip.com/8jlwf5.gif' %}"/>
 </div>
           <div class="top-navbar">
             <nav class="navbar navbar-expand-lg">
@@ -203,7 +193,7 @@ ob_start();
                         <span class="material-icons">arrow_back_ios</span>
                     </button>
                          
-                         <a class="navbar-brand" href="#"> Categorias </a>
+                         <a class="navbar-brand" href="{% static '#' %}"> Categorias </a>
                          
                     <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -213,22 +203,22 @@ ob_start();
                     <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">  
                          <li class="nav-item">
-                                <a class="nav-link" href="../cuenta/configuracion.php">
+                                <a class="nav-link" href="{% static '../cuenta/configuracion.php' %}">
                                         <span class="material-icons">settings</span>
                                         </a>
                             </li> 
                             <li class="dropdown nav-item active">
-                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                <a href="{% static '#' %}" class="nav-link" data-toggle="dropdown">
                                    
-                                   <img src="../../backend/img/reere.png" >
+                                   <img src="{% static '../../backend/img/reere.png' %}" >
                                            
                                </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="../cuenta/perfil.php">Mi perfil</a>
+                                        <a href="{% static '../cuenta/perfil.php' %}">Mi perfil</a>
                                     </li>
                                     <li>
-                                        <a href="../cuenta/salir.php">Salir</a>
+                                        <a href="{% static '../cuenta/salir.php' %}">Salir</a>
                                     </li>
                                     
                                 </ul>
@@ -248,8 +238,8 @@ ob_start();
 
                             <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="../administrador/escritorio.php">Panel administrativo</a></li>
-    <li class="breadcrumb-item"><a href="../categoria/mostrar.php">Categorias </a></li>
+    <li class="breadcrumb-item"><a href="{% static '../administrador/escritorio.php' %}">Panel administrativo</a></li>
+    <li class="breadcrumb-item"><a href="{% static '../categoria/mostrar.php' %}">Categorias </a></li>
     <li class="breadcrumb-item active" aria-current="page">Nuevo</li>
   </ol>
 </nav>
@@ -289,7 +279,7 @@ ob_start();
 <div class="form-group">
         <div class="col-sm-12">
             <button name='staddcate' class="btn btn-success text-white">Guardar</button>                       
-            <a class="btn btn-danger text-white" href="../categoria/mostrar.php">Cancelar</a>
+            <a class="btn btn-danger text-white" href="{% static '../categoria/mostrar.php' %}">Cancelar</a>
         </div>
     </div>
 </form> 
@@ -307,11 +297,11 @@ ob_start();
   
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="../../backend/js/jquery-3.3.1.slim.min.js"></script>
-   <script src="../../backend/js/popper.min.js"></script>
-   <script src="../../backend/js/bootstrap.min.js"></script>
-   <script src="../../backend/js/jquery-3.3.1.min.js"></script>
-  <script src="../../backend/js/sweetalert.js"></script>
+   <script src="{% static '../../backend/js/jquery-3.3.1.slim.min.js' %}"></script>
+   <script src="{% static '../../backend/js/popper.min.js' %}"></script>
+   <script src="{% static '../../backend/js/bootstrap.min.js' %}"></script>
+   <script src="{% static '../../backend/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static '../../backend/js/sweetalert.js' %}"></script>
    <?php
     include_once '../../backend/php/st_stcate.php'
 ?>
@@ -330,7 +320,7 @@ ob_start();
         });
 
 </script>
-<script src="../../backend/js/loader.js"></script>
+<script src="{% static '../../backend/js/loader.js' %}"></script>
 
         
   </body>

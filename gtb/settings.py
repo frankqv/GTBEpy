@@ -18,7 +18,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+#Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -68,8 +68,8 @@ DATABASES = {
   ###  'default': {
   #      'ENGINE': 'django.db.backends.mysql',
   #      'NAME': 'pygtb',
-  #      'USER': 'root',  # Nombre de usuario de MySQL
-  #      'PASSWORD': '',  # Contraseña de MySQL
+  #      'USER': 'root', 
+  #      'PASSWORD': '', 
   #      'HOST': 'localhost',
   #      'PORT': '3306',
     }

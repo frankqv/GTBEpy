@@ -42,8 +42,6 @@ def categoria_nuevo(request):
 #Carpeta Cliente
 def cliente_escrtorio(request):
     return render(request, 'frontend/cliente/escritorio.html')
-#plan
-#servicio
 
 def cliente_plan(request):
     # Tu lógica aquí

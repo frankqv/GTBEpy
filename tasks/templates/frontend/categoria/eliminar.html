@@ -193,7 +193,7 @@ ob_start();
           
         <!-- Page Content  -->
         <div id="content">
-          <div class='pre-loader'>
+          <div class=''>
     <img class='loading-gif' alt='loading' src="{% static 'https://i.imgflip.com/8jlwf5.gif' %}"/>
 </div>
           <div class="top-navbar">
@@ -320,11 +320,11 @@ if($sentencia){
   
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="../../backend/js/jquery-3.3.1.slim.min.js"></script>
-   <script src="../../backend/js/popper.min.js"></script>
-   <script src="../../backend/js/bootstrap.min.js"></script>
-   <script src="../../backend/js/jquery-3.3.1.min.js"></script>
-  <script src="../../backend/js/sweetalert.js"></script>
+   <script src="{% static '../../backend/js/jquery-3.3.1.slim.min.js' %}"></script>
+   <script src="{% static '../../backend/js/popper.min.js' %}"></script>
+   <script src="{% static '../../backend/js/bootstrap.min.js' %}"></script>
+   <script src="{% static '../../backend/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static '../../backend/js/sweetalert.js' %}"></script>
    <?php
     include_once '../../backend/php/st_dltcate.php'
 ?>
@@ -343,7 +343,7 @@ if($sentencia){
         });
 
 </script>
-<script src="../../backend/js/loader.js"></script>
+<script src="{% static '../../backend/js/loader.js' %}"></script>
 
         
   </body>
