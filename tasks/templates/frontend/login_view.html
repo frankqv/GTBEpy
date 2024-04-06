@@ -1,23 +1,51 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
+    <title>GET THE BEST</title>
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'css/style.css"> -->
+
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png '%}"/>
 </head>
 <body>
-    <h2>Iniciar sesión</h2>
-    <form method="post">
+    <div class="login-wrapper">
 
-        <div>
-            <label for="nombre">Nombre de usuario:</label>
-            <input type="text" id="nombre" name="nombre">
+        <div class=" box-image box-col">
+ <img src="{% static '/img/sideimage.png '%}" alt="sideimage"> 
         </div>
-        <div>
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña">
+        <div class="box-col">
+           <div class="box-form">
+               <div class="inner">
+                   <div class="form-head">
+                       <div class="title">
+                           Bienvenido de nuevo
+                       </div>
+                       <br>
+                    
+                       
+                       <div class="actions">
+                           <button onclick="window.location.href='administrador/escritorio.html'" class="btn btn-submit">Acceder</button>
+                       </div>
+
+                       </form>
+                       <div class="actions">
+                        <button onclick="window.location.href='registrar.html'" class="btn btn-submit">Registrar</button>
+                    </div>
+                    
+                    <button onclick="window.location.href='../home.html'" class="btnHome">Home</button>
+
+               </div>
+               
+                      
+           </div>
+
         </div>
-        <button type="submit">Iniciar sesión</button>
-    </form>
-</body>
-</html>
+    </div>
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/reenvio.js' %}"></script>

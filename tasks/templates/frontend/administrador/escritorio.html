@@ -1,0 +1,427 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>GET THE BEST</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!--css3-->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/loader.css' %}">
+    <!-- Data Tables -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/datatable.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/buttonsdataTables.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font.css' %}">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--google material icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../backend/img/favicon.png"/>
+
+
+
+
+
+</head>
+
+
+<body> <div class="wrapper"> <div class="body-overlay"></div>
+    Copy code
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="../../backend/img/favicon.png" class="img-fluid" /> <span>GET THE BEST</span></h3>
+            </div>
+    
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="../administrador/escritorio.html" class="dashboard"><i class="material-icons">dashboard</i> <span>Panel administrativo</span></a>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">group</i> <span>Clientes</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+                        <li>
+                            <a href="../clientes/mostrar.html">Mostrar</a>
+                        </li>
+                        <li>
+                            <a href="../clientes/nuevo.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">dataset</i> <span>Planes</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+                        <li>
+                            <a href="../plan/mostrar.html">Mostrar</a>
+                        </li>
+                        <li>
+                            <a href="../plan/nuevo.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="../servicio/mostrar.html"><i class="material-icons">view_timeline</i> <span>Servicio</span></a>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">manage_accounts</i> <span>Usuarios</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu3">
+                        <li>
+                            <a href="../usuario/mostrar.html">Mostrar</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">conveyor_belt</i> <span>Productos</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu4">
+                        <li>
+                            <a href="../producto/mostrar.html">Mostrar</a>
+                        </li>
+                        <li>
+                            <a href="../producto/nuevo.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">category</i> <span>Categorias</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu5">
+                        <li>
+                            <a href="../categoria/mostrar.html">Mostrar</a>
+                        </li>
+                        <li>
+                            <a href="../categoria/nuevo.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">point_of_sale</i> <span>Ventas</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+                        <li>
+                            <a href="../venta/mostrar.html">Mostrar</a>
+                        </li>
+                        <li>
+                            <a href="../venta/nuevo.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#pageSubmenu09" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">shopping_basket</i> <span>Compras</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu09">
+                        <li>
+                            <a href="../compra/mostrar.html">Mostrar</a>
+                        </li>
+                        <li>
+                            <a href="../compra/nuevo.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#pageSubmenu010" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">savings</i> <span>Gastos</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu010">
+                        <li>
+                            <a href="../gastos/mostrar.html">Mostrar</a>
+                        </li>
+                        <li>
+                            <a href="../gastos/nuevo.html">Nuevo</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown">
+                    <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">signal_cellular_alt</i> <span>Reportes</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu7">
+                        <li>
+                            <a href="../reporte/productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="../reporte/clientes.html">Clientes</a>
+                        </li>
+                        <li>
+                            <a href="../reporte/ventas.html">Ventas</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="">
+                    <a href="../graficos/mostrar.html"><i class="material-icons">grain</i> <span>Graficos</span></a>
+                </li>
+    
+                <li class="">
+                    <a href="../cuenta/configuracion.html"><i class="material-icons">settings</i> <span>Configuracion</span></a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+       
+    
+            <div class="top-navbar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                            <span class="material-icons">arrow_back_ios</span>
+                        </button>
+    
+                        <a class="navbar-brand" href="#"> Panel administrativo </a>
+    
+                        <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="material-icons">more_vert</span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../cuenta/configuracion.html">
+                                        <span class="material-icons">settings</span>
+                                    </a>
+                                </li>
+    
+                                <li class="dropdown nav-item active">
+                                    <a href="#" class="nav-link" data-toggle="dropdown">
+                                        <img src="../../backend/img/reere.png">
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="../cuenta/perfil.html">Mi perfil</a>
+                                        </li>
+                                        <li>
+                                            <a href="../cuenta/salir.html">Salir</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+    
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header">
+                                <div class="icon icon-warning">
+                                    <span class="material-icons">group</span>
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <p class="category"><strong>Clientes</strong></p>
+                                <h3 class="card-title">
+                                    <!-- PHP code to display the total number of clients -->
+                                    <?php echo  $total; ?>
+    <small>Clientes</small> </h3> </div>
+    
+    Copy code
+                            <div class="card-footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="material-icons">date_range</i> Últimos 30 días
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header">
+                                <div class="icon icon-success">
+                                    <span class="material-icons">shopping_basket</span>
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <p class="category"><strong>Compras</strong></p>
+                                <h3 class="card-title">
+                                    <!-- PHP code to display the total number of purchases -->
+                                    <?php echo  $total; ?>
+                                    <small>Compras</small>
+                                </h3>
+                            </div>
+    
+                            <div class="card-footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="material-icons">date_range</i> Últimos 30 días
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header">
+                                <div class="icon icon-danger">
+                                    <span class="material-icons">point_of_sale</span>
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <p class="category"><strong>Ventas</strong></p>
+                                <h3 class="card-title">
+                                    <!-- PHP code to display the total number of sales -->
+                                    <?php echo  $total; ?>
+                                    <small>Ventas</small>
+                                </h3>
+                            </div>
+    
+                            <div class="card-footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="material-icons">date_range</i> Últimos 30 días
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header">
+                                <div class="icon icon-info">
+                                    <span class="material-icons">savings</span>
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <p class="category"><strong>Gastos</strong></p>
+                                <h3 class="card-title">
+                                    <!-- PHP code to display the total number of expenses -->
+                                    <?php echo  $total; ?>
+                                    <small>Gastos</small>
+                                </h3>
+                            </div>
+    
+                            <div class="card-footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="material-icons">date_range</i> Últimos 30 días
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"> Últimos clientes </h4>
+                            </div>
+    
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Nombre</th>
+                                                <th>Correo</th>
+                                                <th>Teléfono</th>
+                                                <th>Dirección</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+    
+                                        <tbody>
+                                            <!-- PHP code to display the last 5 clients -->
+                                            <?php foreach ($last_clients as $client) { ?>
+                                                <tr>
+                                                    <td><?php echo $client['id']; ?></td>
+                                                    <td><?php echo $client['name']; ?></td>
+                                                    <td><?php echo $client['email']; ?></td>
+                                                    <td><?php echo $client['phone']; ?></td>
+                                                    <td><?php echo $client['address']; ?></td>
+                                                    <td>
+                                                        <a href="../clientes/mostrar.html?id=<?php echo $client['id']; ?>" class="btn btn-link btn-primary btn-just-icon edit">
+                                                            <i class="material-icons">visibility</i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <nav class="float-left">
+                            <ul>
+                                <li>
+                                    <a href="https://www.creative-tim.com" target="_blank">
+                                        Creative Tim
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.creative-tim.com/blog" target="_blank">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.creative-tim.com/license" target="_blank">
+                                        Licenses
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="copyright float-right">
+                            &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>, made with <i class="material-icons">favorite</i> by
+                            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{%static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{%static 'js/popper.min.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    
+    <!-- Data Tables -->
+    <script type="text/javascript" src="{%static 'js/datatable.js' %}"></script>
+    <script type="text/javascript" src="{%static 'js/buttonsdataTables.js' %}"></script>
+
+    <!-- Custom js -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/sidebar.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/datatables.js' %}"></script>
+    <script src="{% static 'js/buttons.js' %}"></script>
+    <script src="{% static 'js/buttons.html5.js' %}"></script>
+    <script src="{% static 'js/buttons.print.js' %}"></script>
+    <script src="{% static 'js/buttons.flash.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'backend/css/bootstrap.min.css' %}">
+
+
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script src="{% static 'js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
+    
+  </body>
+  </html>
