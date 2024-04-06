@@ -13,4 +13,4 @@ def erro500(request):
 def login(request):
     return render(request, 'frontend/login.html')
 def registrar(request):
-    return render(request, 'registrar.html')
+    return render(request, 'frontend/registrar.html')
