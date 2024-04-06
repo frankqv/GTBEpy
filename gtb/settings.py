@@ -65,15 +65,15 @@ WSGI_APPLICATION = 'gtb.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pygtb',
-        'USER': 'root',  # Nombre de usuario de MySQL
-        'PASSWORD': '',  # Contraseña de MySQL
-        'HOST': 'localhost',
-        'PORT': '3306',
+  ###  'default': {
+  #      'ENGINE': 'django.db.backends.mysql',
+  #      'NAME': 'pygtb',
+  #      'USER': 'root',  # Nombre de usuario de MySQL
+  #      'PASSWORD': '',  # Contraseña de MySQL
+  #      'HOST': 'localhost',
+  #      'PORT': '3306',
     }
-}
+
 
 
 # Password validation

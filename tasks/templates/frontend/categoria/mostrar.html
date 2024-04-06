@@ -122,10 +122,10 @@
                          <i class="material-icons">point_of_sale</i><span>Ventas</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu6">
                         <li>
-                            <a href="../venta/mostrar.php">Mostrar</a>
+                            <a href="{% static '../venta/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../venta/nuevo.php">Nuevo</a>
+                            <a href="{% static '../venta/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
@@ -135,10 +135,10 @@
                          <i class="material-icons">shopping_basket</i><span>Compras</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu09">
                         <li>
-                            <a href="../compra/mostrar.php">Mostrar</a>
+                            <a href="{% static '../compra/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../compra/nuevo.php">Nuevo</a>
+                            <a href="{% static '../compra/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
@@ -148,10 +148,10 @@
                          <i class="material-icons">savings</i><span>Gastos</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu010">
                         <li>
-                            <a href="../gastos/mostrar.php">Mostrar</a>
+                            <a href="{% static '../gastos/mostrar.php' %}">Mostrar</a>
                         </li>
                         <li>
-                            <a href="../gastos/nuevo.php">Nuevo</a>
+                            <a href="{% static '../gastos/nuevo.php' %}">Nuevo</a>
                         </li>
                     </ul>
                 </li>
@@ -162,23 +162,23 @@
                          <i class="material-icons">signal_cellular_alt</i><span>Reportes</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu7">
                         <li>
-                            <a href="../reporte/productos.php">Productos</a>
+                            <a href="{% static '../reporte/productos.php' %}">Productos</a>
                         </li>
                         <li>
-                            <a href="../reporte/clientes.php">Clientes</a>
+                            <a href="{% static '../reporte/clientes.php' %}">Clientes</a>
                         </li>
                         <li>
-                            <a href="../reporte/ventas.php">Ventas</a>
+                            <a href="{% static '../reporte/ventas.php' %}">Ventas</a>
                         </li>
                     </ul>
                 </li>
 
                  <li class="">
-                    <a href="../graficos/mostrar.php"><i class="material-icons">grain</i><span>Graficos</span></a>
+                    <a href="{% static '../graficos/mostrar.php' %}"><i class="material-icons">grain</i><span>Graficos</span></a>
                 </li>
                
                <li class="">
-                    <a href="../cuenta/configuracion.php"><i class="material-icons">settings</i><span>Configuracion</span></a>
+                    <a href="{% static '../cuenta/configuracion.php' %}"><i class="material-icons">settings</i><span>Configuracion</span></a>
                 </li>
                    
             </ul>
@@ -188,7 +188,7 @@
         <!-- Page Content  -->
         <div id="content">
           <div class='pre-loader'>
-    <img class='loading-gif' alt='loading' src="https://i.imgflip.com/8jlwf5.gif"/>
+    <img class='loading-gif' alt='loading' src="{% static 'https://i.imgflip.com/8jlwf5.gif' %}"/>
 </div>
           <div class="top-navbar">
             <nav class="navbar navbar-expand-lg">
@@ -198,7 +198,7 @@
                         <span class="material-icons">arrow_back_ios</span>
                     </button>
                          
-                         <a class="navbar-brand" href="#"> Categorias </a>
+                         <a class="navbar-brand" href="{% static '#' %}"> Categorias </a>
                          
                     <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -208,22 +208,22 @@
                     <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">  
                          <li class="nav-item">
-                                <a class="nav-link" href="../cuenta/configuracion.php">
+                                <a class="nav-link" href="{% static '../cuenta/configuracion.php' %}">
                                         <span class="material-icons">settings</span>
                                         </a>
                             </li> 
                             <li class="dropdown nav-item active">
-                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                <a href="{% static '#' %}" class="nav-link" data-toggle="dropdown">
                                    
-                                   <img src="img/reere.png" >
+                                   <img src="{% static 'img/reere.png' %}" >
                                            
                                </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="../cuenta/perfil.php">Mi perfil</a>
+                                        <a href="{% static '../cuenta/perfil.php' %}">Mi perfil</a>
                                     </li>
                                     <li>
-                                        <a href="../cuenta/salir.php">Salir</a>
+                                        <a href="{% static '../cuenta/salir.php' %}">Salir</a>
                                     </li>
                                     
                                 </ul>
@@ -246,7 +246,7 @@
                                     <p class="category">Nuevas categorias reciente añadidos el dia de hoy</p>
                                 </div>
                                 <br>
-                                <a href="../categoria/nuevo.php" class="btn btn-danger text-white"
+                                <a href="{% static '../categoria/nuevo.php' %}" class="btn btn-danger text-white"
                             >Nueva categoria</a>
                             <br>
                                 <div class="card-content table-responsive">
@@ -283,10 +283,10 @@ if($sentencia){
      <?php  } ?> </td>
                                                 <td>
         <?php    if($g->estado =='Activo')  { ?>
-    <a class="btn btn-warning text-white" href="../categoria/actualizar.php?id=<?php echo  $g->idcate; ?>"><i class='material-icons' data-toggle='tooltip' title='crear'>edit</i></a>
-    <a class="btn btn-danger text-white" href="../categoria/eliminar.php?id=<?php echo  $g->idcate; ?>"><i class='material-icons' data-toggle='tooltip' title='crear'>cancel</i></a>
+    <a class="btn btn-warning text-white" href="{% static '../categoria/actualizar.php?id=<?php echo  $g->idcate; ?>' %}"><i class='material-icons' data-toggle='tooltip' title='crear'>edit</i></a>
+    <a class="btn btn-danger text-white" href="{% static '../categoria/eliminar.php?id=<?php echo  $g->idcate; ?>' %}"><i class='material-icons' data-toggle='tooltip' title='crear'>cancel</i></a>
                 <?php  }   else {?> 
-<a class="btn btn-warning text-white" href="../categoria/actualizar.php?id=<?php echo  $g->idcate; ?>"><i class='material-icons' data-toggle='tooltip' title='crear'>edit</i></a>
+<a class="btn btn-warning text-white" href="{% static '../categoria/actualizar.php?id=<?php echo  $g->idcate; ?>' %}"><i class='material-icons' data-toggle='tooltip' title='crear'>edit</i></a>
             <?php  } ?>
                                                 </td>
                                             </tr>
